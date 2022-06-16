@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    margin:3em;
+    background-color: #ff7978;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+div.back-img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: url(content/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+div.left{
+    text-align: center;
+    margin:0 4em;
+}
+div.left h1{
+    margin-top: 4em;
+    /* max-width: 8em; */
+}
+div.left p{
+    line-height: 1.8em;
+    /* max-width: 16em; */
+}
+
+div.right{
+    margin-top: 4em;
+    text-align: center;
+}
+
+div.top-block{
+    background-color: #5d54a3;
+    padding: 1em;
+    border-radius: 12px;
+    margin-bottom: 1em;
+}
+div.top-block p{
+    margin: 0 auto;
+    max-width: 12em;
+}
+
+div.form-block{
+    background-color: white;
+    color:gray;
+    height: 75vh;
+    border-radius: 15px;
+}
+
+[type="text"], [type="email"],[type="password"]{
+    margin:1.4em 0;
+    width: 80%;
+    padding: 1em;
+}
+
+[type="submit"]{
+    color:white;
+    padding:1em;
+    width: 88%;
+    background-color: #37cc8a;
+    border-radius: 6px;
+    border: none;
+}
+[type="submit"]:hover{
+    background-color: #0baa62;
+    cursor: pointer;
+}
+
+div.form-block p{
+    margin: 2em auto;
+    max-width:17em;
+}
+
+div.form-block a{
+    text-decoration: none;
+    color:#ff7978;
+}
+
+@media screen and (min-width: 1300px){
+
+    body{
+        margin: 2em;
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.back-img{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background: url(content/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+
+    div.left{
+        width: 40%;
+        margin: 0 auto;
+        text-align:left;
+    }
+    div.left h1 {
+        font-size: 3rem;
+        /* max-width: 8em; */
+        
+    }
+    div.top-block p {
+        max-width: 21em;
+    }
+
+    div.right {
+        margin-top: 0;
+        width: 35%;
+    }
+
+}
